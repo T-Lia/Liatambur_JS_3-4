@@ -8,9 +8,7 @@ function createHTML () {
 
 	var wrapper = document.createElement('div');
 	wrapper.classList.add('wrapper');
-	document.body.appendChild(wrapper);
-	wrapper.style.width = '700px';
-	wrapper.style.margin = '0 auto';
+	document.body.appendChild(wrapper);	
 
 
 	var header = document.createElement('h3');
@@ -27,14 +25,13 @@ function createHTML () {
 
 		var question = document.createElement('p');
 		question.innerHTML = i +'. Вопрос №' + i;	
-		divQues.appendChild(question);
-		question.style.fontSize = '20px';
+		divQues.appendChild(question);		
 
 
 		for (var j = 1; j < 4; j++) {
 			var chBoxContainer = document.createElement('div');
-			divQues.appendChild(chBoxContainer);
-			chBoxContainer.style.marginLeft = '25px';
+			chBoxContainer.classList.add('chBoxContainer');
+			divQues.appendChild(chBoxContainer);			
 
 			var id = 'choice_' + i + '_' + j;
 
@@ -55,8 +52,6 @@ function createHTML () {
 	wrapper.appendChild(button);
 	button.setAttribute('type', 'button');
 	button.classList.add('btn');
-	button.classList.add('btn-default');
-	button.style.display = 'block';
-	button.style.margin = '20px auto';
+	button.classList.add('btn-default');	
 }
 

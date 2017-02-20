@@ -1,3 +1,17 @@
-/*.wrapper {
+.wrapper {
 	width: 700px;
-}*/
+	margin: 0 auto;
+}
+
+.question {
+	font-size: 20px;
+}
+
+.chBoxContainer {
+	margin-left: 25px;
+}
+
+.btn {
+	display: block;
+	margin: 20px auto;
+}
